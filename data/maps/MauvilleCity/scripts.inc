@@ -639,7 +639,7 @@ MauvilleCity_Text_CitySign:
 
 MauvilleCity_Text_GymSign:
 	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
+	.string "LEADER: WATTSON. LEVEL CAP: 24\l"
 	.string "“The cheerfully electrifying man!”$"
 
 MauvilleCity_Text_BikeShopSign:

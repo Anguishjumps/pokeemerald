@@ -22,6 +22,9 @@
 #define TYPE_DRAGON           16
 #define TYPE_DARK             17
 #define NUMBER_OF_MON_TYPES   18
+#define TYPE_RANDOM           19
+#define TYPE_BALANCED         20
+
 
 // Pokemon egg groups
 #define EGG_GROUP_NONE          0

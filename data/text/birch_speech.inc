@@ -1,39 +1,36 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Hi! You installed this correctly!\p"
+	.string "Welcome to the Semi-Randomiser!\p"
+	.string "This guy is BIRCH. But I'm Anguish.\p"
+	.string "This romhack randomises all enemy\n"
+	.string "trainer POKéMON.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "Like this one, here:”\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "Haha! Look at my cool LOTAD.\n"
+	.string "This algorithm is a real menace.\p"
+	.string "I don't know what you'll find,\n"
+	.string "but this was designed to be played\l"
+	.string "blind in a nuzlocke setting.\p"
+	.string "Most stuff is vanilla, but shops\n"
+	.string "stock candies and cheaper balls.\p"
+	.string "Also, GYM statues will tell you\n"
+	.string "level caps, if you forget.\p"
+	.string "That's all from me for now!\n"
+	.string "Good luck!\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
 	.string "And you are?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Do you want to play as the boy?\n"
+	.string "Or play as the girl?$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"

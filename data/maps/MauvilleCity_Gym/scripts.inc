@@ -382,12 +382,28 @@ MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "Go forth and endeavor, youngster!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "MAUVILLE CITY POKéMON GYM$"
+	.string "GYM LEVEL CAPS:\n"
+	.string "ROXANNE: 15\p"
+	.string "BRAWLY: 19\n"
+	.string "WATTSON: 24\p"
+	.string "FLANNERY: 29\n"
+	.string "NORMAN: 31\p"
+	.string "WINONA: 33\n"
+	.string "TATE AND LIZA: 42\p"
+	.string "JUAN: 46\n"
+	.string "ELITE FOUR: 55$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "MAUVILLE CITY POKéMON GYM\p"
-	.string "WATTSON'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "GYM LEVEL CAPS:\n"
+	.string "ROXANNE: 15\p"
+	.string "BRAWLY: 19\n"
+	.string "WATTSON: 24\p"
+	.string "FLANNERY: 29\n"
+	.string "NORMAN: 31\p"
+	.string "WINONA: 33\n"
+	.string "TATE AND LIZA: 42\p"
+	.string "JUAN: 46\n"
+	.string "ELITE FOUR: 55$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
 	.string "WATTSON: Ah-ha! Here at last!\n"

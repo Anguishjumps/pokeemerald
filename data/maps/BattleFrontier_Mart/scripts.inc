@@ -15,6 +15,7 @@ BattleFrontier_Mart_EventScript_Clerk::
 
 	.align 2
 BattleFrontier_Mart_Pokemart:
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION

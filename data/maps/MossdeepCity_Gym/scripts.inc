@@ -606,12 +606,28 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "bring some more POKéMON.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "MOSSDEEP CITY POKéMON GYM$"
+	.string "GYM LEVEL CAPS:\n"
+	.string "ROXANNE: 15\p"
+	.string "BRAWLY: 19\n"
+	.string "WATTSON: 24\p"
+	.string "FLANNERY: 29\n"
+	.string "NORMAN: 31\p"
+	.string "WINONA: 33\n"
+	.string "TATE AND LIZA: 42\p"
+	.string "JUAN: 46\n"
+	.string "ELITE FOUR: 55$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "MOSSDEEP CITY POKéMON GYM\p"
-	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "GYM LEVEL CAPS:\n"
+	.string "ROXANNE: 15\p"
+	.string "BRAWLY: 19\n"
+	.string "WATTSON: 24\p"
+	.string "FLANNERY: 29\n"
+	.string "NORMAN: 31\p"
+	.string "WINONA: 33\n"
+	.string "TATE AND LIZA: 42\p"
+	.string "JUAN: 46\n"
+	.string "ELITE FOUR: 55$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
 	.string "TATE: POKéMON…\n"

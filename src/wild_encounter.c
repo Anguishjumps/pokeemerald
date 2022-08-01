@@ -415,6 +415,19 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
     u8 wildMonIndex = 0;
     u8 level;
 
+    u8 validTypes[4] = {TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM};
+    u16 BST_BASE = 180;
+    u8 BST_SCALING = 40;
+    u8 RANGE_BASE = 40;
+    double avgBST;
+    double lower;
+    double upper;
+    u16 thisBST;
+    u16 mon;
+    u8 chosenType = TYPE_NORMAL;
+    u8 i,j;
+    u16 chosenMon = 0;
+
     switch (area)
     {
     case WILD_AREA_LAND:
@@ -424,15 +437,27 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
             break;
 
         wildMonIndex = ChooseWildMonIndex_Land();
+        validTypes[0] = TYPE_RANDOM;
+        validTypes[1] = TYPE_RANDOM;
+        validTypes[2] = TYPE_RANDOM;
+        validTypes[3] = TYPE_RANDOM;
         break;
     case WILD_AREA_WATER:
         if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_ELECTRIC, ABILITY_STATIC, &wildMonIndex))
             break;
 
         wildMonIndex = ChooseWildMonIndex_WaterRock();
+        validTypes[0] = TYPE_WATER;
+        validTypes[1] = TYPE_FLYING;
+        validTypes[2] = TYPE_RANDOM;
+        validTypes[3] = TYPE_RANDOM;
         break;
     case WILD_AREA_ROCKS:
         wildMonIndex = ChooseWildMonIndex_WaterRock();
+        validTypes[0] = TYPE_ROCK;
+        validTypes[1] = TYPE_GROUND;
+        validTypes[2] = TYPE_STEEL;
+        validTypes[3] = TYPE_RANDOM;
         break;
     }
 
@@ -442,7 +467,60 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
     if (gMapHeader.mapLayoutId != LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
         return FALSE;
 
-    CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);
+    avgBST = (BST_SCALING*Sqrt(level)) + BST_BASE;
+    lower = avgBST-RANGE_BASE;
+    upper = avgBST+RANGE_BASE;
+    if (lower > 520) {
+            lower = 520;
+    }
+    while (chosenMon == 0) {
+        //Pick out mons based on BST and type
+        chosenType = (Random() % 100); //50, 30, 15, 5
+        if (chosenType <= 5) {
+            chosenType = validTypes[3];
+        }
+        else if (chosenType <= 20) {
+            chosenType = validTypes[2];
+        }
+        else if (chosenType <= 50) {
+            chosenType = validTypes[1];
+        }
+        else { chosenType = validTypes[0];
+        }
+
+        if (chosenType == TYPE_RANDOM) {
+            chosenType = Random() % 18;
+            while (chosenType == 9) {
+                chosenType = Random() % 18;
+            }
+        }
+        mon = (Random() % 411);
+        thisBST = (gBaseStats[mon].baseHP + gBaseStats[mon].baseAttack + gBaseStats[mon].baseDefense + gBaseStats[mon].baseSpeed + gBaseStats[mon].baseSpAttack + gBaseStats[mon].baseSpDefense);
+        if (mon == 303) {
+            thisBST += 220; //Fuck you shedinja
+        }
+        if (mon == 357) {
+            thisBST += 60; //Fuck you medicham
+        }
+        if (mon == 366) {
+            thisBST -= 120; //Fuck you slaking
+        }
+        j = 0;
+        if ((j == 0) && ((gBaseStats[mon].type1 == chosenType) || (gBaseStats[mon].type2 == chosenType))){
+            if ((thisBST >= (lower)) && (thisBST <= (upper))) {
+                chosenMon = mon;
+            }
+            else { //Prevent Loops
+                lower -=1;
+                i = Random() % 100;
+                if (i == 1) {
+                    validTypes[3] = TYPE_RANDOM;
+                }
+            }
+        }
+    }
+
+    CreateWildMon(chosenMon, level);
     return TRUE;
 }
 
@@ -452,6 +530,7 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
     u8 level = ChooseWildMonLevel(&wildMonInfo->wildPokemon[wildMonIndex]);
 
     CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);
+    //Anguish HERE
     return wildMonInfo->wildPokemon[wildMonIndex].species;
 }
 

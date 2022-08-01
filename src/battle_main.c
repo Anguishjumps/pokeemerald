@@ -453,6 +453,68 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     [TYPE_DARK] = _("DARK"),
 };
 
+//anguish coded this
+//trainer class type lists
+const struct TrainerTypeUsage gTrainerTypeUsageTable[] =
+{
+    {TRAINER_CLASS_TEAM_AQUA, TYPE_WATER, TYPE_DARK, TYPE_POISON, TYPE_ICE},
+    {TRAINER_CLASS_AQUA_ADMIN, TYPE_WATER, TYPE_DARK, TYPE_POISON, TYPE_RANDOM},
+    {TRAINER_CLASS_AQUA_LEADER, TYPE_WATER, TYPE_DARK, TYPE_POISON, TYPE_BALANCED},
+    {TRAINER_CLASS_AROMA_LADY, TYPE_GRASS, TYPE_NORMAL, TYPE_FLYING, TYPE_BUG},
+    {TRAINER_CLASS_RUIN_MANIAC, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL, TYPE_PSYCHIC},
+    {TRAINER_CLASS_INTERVIEWER, TYPE_ELECTRIC, TYPE_NORMAL, TYPE_STEEL, TYPE_GHOST},
+    {TRAINER_CLASS_TUBER_F, TYPE_WATER, TYPE_NORMAL, TYPE_FLYING, TYPE_BUG},
+    {TRAINER_CLASS_TUBER_M, TYPE_WATER, TYPE_NORMAL, TYPE_FLYING, TYPE_GRASS},
+    {TRAINER_CLASS_SIS_AND_BRO, TYPE_WATER, TYPE_FLYING, TYPE_PSYCHIC, TYPE_POISON},
+    {TRAINER_CLASS_COOLTRAINER, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_HEX_MANIAC, TYPE_GHOST, TYPE_PSYCHIC, TYPE_DARK, TYPE_POISON},
+    {TRAINER_CLASS_LADY, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_BEAUTY, TYPE_NORMAL, TYPE_ICE, TYPE_ELECTRIC, TYPE_DARK},
+    {TRAINER_CLASS_RICH_BOY, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_POKEMANIAC, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_SWIMMER_M, TYPE_WATER, TYPE_GHOST, TYPE_ICE, TYPE_POISON},
+    {TRAINER_CLASS_BLACK_BELT, TYPE_FIGHTING, TYPE_ROCK, TYPE_STEEL, TYPE_ICE},
+    {TRAINER_CLASS_GUITARIST, TYPE_ELECTRIC, TYPE_FLYING, TYPE_FIGHTING, TYPE_STEEL},
+    {TRAINER_CLASS_KINDLER, TYPE_FIRE, TYPE_ROCK, TYPE_WATER, TYPE_FLYING},
+    {TRAINER_CLASS_CAMPER, TYPE_FLYING, TYPE_GRASS, TYPE_NORMAL, TYPE_RANDOM},
+    {TRAINER_CLASS_OLD_COUPLE, TYPE_FIGHTING, TYPE_PSYCHIC, TYPE_WATER, TYPE_BALANCED},
+    {TRAINER_CLASS_BUG_MANIAC, TYPE_BUG, TYPE_POISON, TYPE_FLYING, TYPE_WATER},
+    {TRAINER_CLASS_PSYCHIC, TYPE_PSYCHIC, TYPE_GHOST, TYPE_DARK, TYPE_STEEL},
+    {TRAINER_CLASS_GENTLEMAN, TYPE_ELECTRIC, TYPE_NORMAL, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_ELITE_FOUR, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_LEADER, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_SCHOOL_KID, TYPE_PSYCHIC, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_SR_AND_JR, TYPE_NORMAL, TYPE_FIGHTING, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_POKEFAN, TYPE_NORMAL, TYPE_ELECTRIC, TYPE_WATER, TYPE_GROUND},
+    {TRAINER_CLASS_EXPERT, TYPE_FIGHTING, TYPE_PSYCHIC, TYPE_ELECTRIC, TYPE_BALANCED},
+    {TRAINER_CLASS_YOUNGSTER, TYPE_NORMAL, TYPE_FLYING, TYPE_GRASS, TYPE_RANDOM},
+    {TRAINER_CLASS_CHAMPION, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_FISHERMAN, TYPE_WATER, TYPE_WATER, TYPE_ICE, TYPE_ELECTRIC},
+    {TRAINER_CLASS_TRIATHLETE, TYPE_ELECTRIC, TYPE_WATER, TYPE_FLYING, TYPE_NORMAL},
+    {TRAINER_CLASS_DRAGON_TAMER, TYPE_DRAGON, TYPE_FIRE, TYPE_FLYING, TYPE_FIGHTING},
+    {TRAINER_CLASS_BIRD_KEEPER, TYPE_FLYING, TYPE_NORMAL, TYPE_BUG, TYPE_RANDOM},
+    {TRAINER_CLASS_NINJA_BOY, TYPE_POISON, TYPE_DARK, TYPE_ELECTRIC, TYPE_BUG},
+    {TRAINER_CLASS_BATTLE_GIRL, TYPE_FIGHTING, TYPE_FIRE, TYPE_STEEL, TYPE_ROCK},
+    {TRAINER_CLASS_PARASOL_LADY, TYPE_WATER, TYPE_NORMAL, TYPE_ELECTRIC, TYPE_GRASS},
+    {TRAINER_CLASS_SWIMMER_F, TYPE_WATER, TYPE_GHOST, TYPE_ICE, TYPE_POISON},
+    {TRAINER_CLASS_PICNICKER, TYPE_FLYING, TYPE_GRASS, TYPE_NORMAL, TYPE_RANDOM},
+    {TRAINER_CLASS_TWINS, TYPE_NORMAL, TYPE_BUG, TYPE_ELECTRIC, TYPE_RANDOM},
+    {TRAINER_CLASS_SAILOR, TYPE_WATER, TYPE_FIGHTING, TYPE_ROCK, TYPE_FLYING},
+    {TRAINER_CLASS_COLLECTOR, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_RIVAL, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_PKMN_BREEDER, TYPE_NORMAL, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_PKMN_RANGER, TYPE_GRASS, TYPE_BALANCED, TYPE_BALANCED, TYPE_BALANCED},
+    {TRAINER_CLASS_TEAM_MAGMA, TYPE_FIRE, TYPE_GROUND, TYPE_GRASS, TYPE_ROCK},
+    {TRAINER_CLASS_MAGMA_ADMIN, TYPE_FIRE, TYPE_GROUND, TYPE_GRASS, TYPE_RANDOM},
+    {TRAINER_CLASS_MAGMA_LEADER, TYPE_FIRE, TYPE_GROUND, TYPE_GRASS, TYPE_BALANCED},
+    {TRAINER_CLASS_LASS, TYPE_WATER, TYPE_GRASS, TYPE_NORMAL, TYPE_ELECTRIC},
+    {TRAINER_CLASS_BUG_CATCHER, TYPE_BUG, TYPE_POISON, TYPE_FLYING, TYPE_WATER},
+    {TRAINER_CLASS_HIKER, TYPE_ROCK, TYPE_FIGHTING, TYPE_GROUND, TYPE_POISON},
+    {TRAINER_CLASS_YOUNG_COUPLE, TYPE_BALANCED, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {TRAINER_CLASS_WINSTRATE, TYPE_BALANCED, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM},
+    {0xFF, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM}, // Any trainer class not listed above uses this
+};
+
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
@@ -1942,6 +2004,79 @@ static void SpriteCB_UnusedBattleInit_Main(struct Sprite *sprite)
     }
 }
 
+static double AngGetMaxPlayerPartyLevel() {
+    double partyLevel = 0;
+    u8 i;
+    for(i = 0; i < PARTY_SIZE; i++)
+    {
+        if (partyLevel < GetMonData(&gPlayerParty[i], MON_DATA_LEVEL)) {
+            partyLevel = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+        }
+    }
+    return partyLevel;
+
+}
+
+static double AngGetMaxPartyLevel(u16 trainerNum)
+{
+    u8 i;
+    double trainerLevel;
+    u32 count = gTrainers[trainerNum].partySize;
+
+    trainerLevel = 1;
+
+    switch (gTrainers[trainerNum].partyFlags)
+    {
+    case 0:
+        {
+            const struct TrainerMonNoItemDefaultMoves *party;
+            party = gTrainers[trainerNum].party.NoItemDefaultMoves;
+            for (i = 0; i < count; i++) {
+                if (trainerLevel < party[i].lvl){
+                    trainerLevel = party[i].lvl;
+                }
+            }
+        }
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET:
+        {
+            const struct TrainerMonNoItemCustomMoves *party;
+            party = gTrainers[trainerNum].party.NoItemCustomMoves;
+            for (i = 0; i < count; i++) {
+                if (trainerLevel < party[i].lvl){
+                    trainerLevel = party[i].lvl;
+                }
+            }
+        }
+        break;
+    case F_TRAINER_PARTY_HELD_ITEM:
+        {
+            const struct TrainerMonItemDefaultMoves *party;
+            party = gTrainers[trainerNum].party.ItemDefaultMoves;
+            for (i = 0; i < count; i++) {
+                if (trainerLevel < party[i].lvl){
+                    trainerLevel = party[i].lvl;
+                }
+            }
+        }
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+        {
+            const struct TrainerMonItemCustomMoves *party;
+            party = gTrainers[trainerNum].party.ItemCustomMoves;
+            for (i = 0; i < count; i++) {}
+                if (trainerLevel < party[i].lvl){
+                    trainerLevel = party[i].lvl;
+                }
+            }
+        break;
+    }
+    if (trainerLevel < (AngGetMaxPlayerPartyLevel()-count)) {
+        trainerLevel = AngGetMaxPlayerPartyLevel()-count;
+    } 
+    return trainerLevel;
+}
+
 static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 firstTrainer)
 {
     u32 nameHash = 0;
@@ -1949,6 +2084,221 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     u8 fixedIV;
     s32 i, j;
     u8 monsCount;
+    u16 BST_BASE = 200;
+    u8 BST_SCALING = 50;
+    u8 RANGE_BASE = 40;
+    double trainerLevel;
+    double avgBST;
+    double lower;
+    double upper;
+    u16 chosenMons[6] = {0,0,0,0,0,0};
+    u8 currentMon = 0;
+    u16 thisBST;
+    u16 mon;
+    u8 chosenType = TYPE_NORMAL;
+    u16 gymTM = 0;
+    u16 *movePointer;
+    u16 testMove;
+    u8 validTypes[4] = {TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM, TYPE_RANDOM};
+    u16 frontierSet = 0;
+    u8 frontierSkips = 0;
+    u8 extraBST = 0; //Tweak for bosses
+    trainerLevel = AngGetMaxPartyLevel(trainerNum);
+    
+    //Monotype Gym Leaders and E4. TODO: Toggle option for monotype or just mostly monotype
+    if ((gTrainers[trainerNum].trainerClass == TRAINER_CLASS_LEADER) || (gTrainers[trainerNum].trainerClass == TRAINER_CLASS_ELITE_FOUR) ||  (gTrainers[trainerNum].trainerClass == TRAINER_CLASS_CHAMPION)) {
+        switch (gTrainers[trainerNum].trainerPic)
+        {
+            case TRAINER_PIC_LEADER_ROXANNE:
+                validTypes[0] = TYPE_ROCK;
+                validTypes[1] = TYPE_ROCK;
+                validTypes[2] = TYPE_ROCK;
+                validTypes[3] = TYPE_ROCK;
+                gymTM = ITEM_TM39_ROCK_TOMB;
+                trainerLevel = 15;
+                break;
+            case TRAINER_PIC_LEADER_BRAWLY:
+                validTypes[0] = TYPE_FIGHTING;
+                validTypes[1] = TYPE_FIGHTING;
+                validTypes[2] = TYPE_FIGHTING;
+                validTypes[3] = TYPE_FIGHTING;
+                gymTM = ITEM_TM08_BULK_UP;
+                trainerLevel = 19;
+                break;
+            case TRAINER_PIC_LEADER_WATTSON:
+                validTypes[0] = TYPE_ELECTRIC;
+                validTypes[1] = TYPE_ELECTRIC;
+                validTypes[2] = TYPE_ELECTRIC;
+                validTypes[3] = TYPE_ELECTRIC;
+                gymTM = ITEM_TM34_SHOCK_WAVE;
+                trainerLevel = 24;
+                break;
+            case TRAINER_PIC_LEADER_FLANNERY:
+                validTypes[0] = TYPE_FIRE;
+                validTypes[1] = TYPE_FIRE;
+                validTypes[2] = TYPE_FIRE;
+                validTypes[3] = TYPE_FIRE;
+                gymTM = ITEM_TM50_OVERHEAT;
+                trainerLevel = 29;
+                break;
+            case TRAINER_PIC_LEADER_NORMAN:
+                validTypes[0] = TYPE_NORMAL;
+                validTypes[1] = TYPE_NORMAL;
+                validTypes[2] = TYPE_NORMAL;
+                validTypes[3] = TYPE_NORMAL;
+                gymTM = ITEM_TM42_FACADE;
+                trainerLevel = 31;
+                break;
+            case TRAINER_PIC_LEADER_WINONA:
+                validTypes[0] = TYPE_FLYING;
+                validTypes[1] = TYPE_FLYING;
+                validTypes[2] = TYPE_FLYING;
+                validTypes[3] = TYPE_FLYING;
+                gymTM = ITEM_TM40_AERIAL_ACE;
+                trainerLevel = 33;
+                break;
+            case TRAINER_PIC_LEADER_TATE_AND_LIZA:
+                validTypes[0] = TYPE_PSYCHIC;
+                validTypes[1] = TYPE_PSYCHIC;
+                validTypes[2] = TYPE_PSYCHIC;
+                validTypes[3] = TYPE_PSYCHIC;
+                gymTM = ITEM_TM04_CALM_MIND;
+                trainerLevel = 42;
+                break;
+            case TRAINER_PIC_LEADER_JUAN:
+                validTypes[0] = TYPE_WATER;
+                validTypes[1] = TYPE_WATER;
+                validTypes[2] = TYPE_WATER;
+                validTypes[3] = TYPE_WATER;
+                gymTM = ITEM_TM03_WATER_PULSE;
+                trainerLevel = 46;
+                break;
+            case TRAINER_PIC_ELITE_FOUR_SIDNEY:
+                validTypes[0] = TYPE_DARK;
+                validTypes[1] = TYPE_DARK;
+                validTypes[2] = TYPE_DARK;
+                validTypes[3] = TYPE_NORMAL;
+                trainerLevel = 49;
+                extraBST = 40;
+                break;
+            case TRAINER_PIC_ELITE_FOUR_PHOEBE:
+                validTypes[0] = TYPE_GHOST;
+                validTypes[1] = TYPE_GHOST;
+                validTypes[2] = TYPE_GHOST;
+                validTypes[3] = TYPE_PSYCHIC;
+                trainerLevel = 51;
+                extraBST = 0; //This is 0 on purpose otherwise she becomes mono psychic w/ mew, deoxys, latis etc
+                break;
+            case TRAINER_PIC_ELITE_FOUR_GLACIA:
+                validTypes[0] = TYPE_ICE;
+                validTypes[1] = TYPE_ICE;
+                validTypes[2] = TYPE_ICE;
+                validTypes[3] = TYPE_WATER;
+                trainerLevel = 53;
+                extraBST = 40;
+                break;
+            case TRAINER_PIC_ELITE_FOUR_DRAKE:
+                validTypes[0] = TYPE_DRAGON;
+                validTypes[1] = TYPE_DRAGON;
+                validTypes[2] = TYPE_DRAGON;
+                validTypes[3] = TYPE_ROCK;
+                trainerLevel = 55;
+                extraBST = 20; //Lower because otherwise u get bodied
+                break;
+            case TRAINER_PIC_CHAMPION_WALLACE:
+                validTypes[0] = TYPE_BALANCED;
+                validTypes[1] = TYPE_BALANCED;
+                validTypes[2] = TYPE_BALANCED;
+                validTypes[3] = TYPE_BALANCED;
+                trainerLevel = 58;
+                extraBST = 80;
+            default:
+                break;
+        }
+    }    
+    else {
+        for  (i = 0; i < 54; i++) { //54 is the length of the trainer class listerino
+            if (gTrainers[trainerNum].trainerClass == gTrainerTypeUsageTable[i].classId) {
+                validTypes[0] = gTrainerTypeUsageTable[i].type0;
+                validTypes[1] = gTrainerTypeUsageTable[i].type1;
+                validTypes[2] = gTrainerTypeUsageTable[i].type2;
+                validTypes[3] = gTrainerTypeUsageTable[i].type3;
+        }
+    }
+    }
+    avgBST = (BST_SCALING*Sqrt(trainerLevel)) + BST_BASE;
+    lower = avgBST-RANGE_BASE+extraBST;
+    upper = avgBST+RANGE_BASE+extraBST;
+    if (lower > 520) {
+            lower = 520;
+    }
+    //Pick out mons based on BST and type
+    while (currentMon < 6) {
+        chosenType = (Random() % 100); //50, 30, 15, 5
+        if (chosenType <= 5) {
+            chosenType = validTypes[3];
+        }
+        else if (chosenType <= 20) {
+            chosenType = validTypes[2];
+        }
+        else if (chosenType <= 50) {
+            chosenType = validTypes[1];
+        }
+        else { chosenType = validTypes[0];
+        }
+
+        if (chosenType == TYPE_RANDOM) {
+            chosenType = Random() % 18;
+            while (chosenType == 9) {
+                chosenType = Random() % 18;
+            }
+        }
+        if (chosenType == TYPE_BALANCED) {
+            chosenType = Random() % 18;
+            j = 0;
+            while (j == 0) {
+                j = 1;
+                for (i = 0; i < currentMon; i ++) {
+                    if ((chosenType == gBaseStats[chosenMons[i]].type1) || (chosenType == gBaseStats[chosenMons[i]].type2) || (chosenType == 9)){
+                        chosenType = Random() % 18;
+                        j = 0;
+                    }
+                }
+            }
+        }
+
+        mon = (Random() % 411);
+        thisBST = (gBaseStats[mon].baseHP + gBaseStats[mon].baseAttack + gBaseStats[mon].baseDefense + gBaseStats[mon].baseSpeed + gBaseStats[mon].baseSpAttack + gBaseStats[mon].baseSpDefense);
+        if (mon == 303) {
+            thisBST += 220; //Fuck you shedinja
+        }
+        if (mon == 357) {
+            thisBST += 60; //Fuck you medicham
+        }
+        if (mon == 366) {
+            thisBST -= 120; //Fuck you slaking
+        }
+        j = 0;
+        for (i = 0; i < 6; i ++) { //No dupes pls
+            if (chosenMons[i] == mon) {
+                j = 1;
+            }
+        }
+
+        if ((j == 0) && ((gBaseStats[mon].type1 == chosenType) || (gBaseStats[mon].type2 == chosenType))){
+            if ((thisBST >= (lower)) && (thisBST <= (upper))) {
+                chosenMons[currentMon] = mon;
+                currentMon += 1;
+            }
+            else { //Prevent Loops
+                lower -=1;
+                i = Random() % 100;
+                if (i == 1) {
+                    validTypes[3] = TYPE_RANDOM;
+                }
+            }
+        }
+    }
 
     if (trainerNum == TRAINER_SECRET_BASE)
         return 0;
@@ -1972,7 +2322,12 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
             monsCount = gTrainers[trainerNum].partySize;
         }
 
-        for (i = 0; i < monsCount; i++)
+        //Swap first and last mons, for power reasons
+        i = chosenMons[monsCount-1];
+        chosenMons[monsCount-1] = chosenMons[0];
+        chosenMons[0] = i;
+        
+        for (i = 0; i < monsCount; i++) //originally monsCount
         {
 
             if (gTrainers[trainerNum].doubleBattle == TRUE)
@@ -1988,7 +2343,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
             switch (gTrainers[trainerNum].partyFlags)
             {
             case 0:
-            {
+            {   
                 const struct TrainerMonNoItemDefaultMoves *partyData = gTrainers[trainerNum].party.NoItemDefaultMoves;
 
                 for (j = 0; gSpeciesNames[partyData[i].species][j] != EOS; j++)
@@ -1996,7 +2351,14 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+
+                if ((gTrainers[trainerNum].trainerClass == TRAINER_CLASS_RIVAL) && i == monsCount-1) {
+                    CreateMon(&party[i], partyData[i].species, trainerLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+                else {
+                    CreateMon(&party[i], chosenMons[i], trainerLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -2008,13 +2370,41 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
-                for (j = 0; j < MAX_MON_MOVES; j++)
-                {
-                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
-                    SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
+                if ((gTrainers[trainerNum].trainerClass == TRAINER_CLASS_RIVAL) && i == monsCount-1) {
+                    CreateMon(&party[i], partyData[i].species, trainerLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
+                else {
+                    CreateMon(&party[i], chosenMons[i], trainerLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+
+
+                //Pulling Battle Frontier sets!
+                frontierSet = 0;
+                frontierSkips = Random() % 13; //Pick a set, but try to, like, randomise the sets a bit.
+                if (frontierSkips < 3) { //Theres a chance that the set is just standard, and not frontier-pilled.
+                    while (frontierSkips > 0) {
+                        for (j = 0; j < 882; j++) { //Number of frontier mons is 882
+                            if (chosenMons[i] == gBattleFrontierMons[j].species) {
+                                if (frontierSkips == 0) {
+                                    frontierSet = j;
+                                    frontierSkips = 0;
+                                }
+                            }
+                        }
+                        frontierSkips -= 1;
+                    }
+
+                    if (frontierSet != 0) { //Put the set in
+                        for (j = 0; j < MAX_MON_MOVES; j++) {
+                            testMove = gBattleFrontierMons[frontierSet].moves[j];
+                            movePointer = (u16*) &testMove;
+                            SetMonData(&party[i], MON_DATA_MOVE1 + j, movePointer);
+                            SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[testMove]);
+                        }
+                    }
+                }
+                
                 break;
             }
             case F_TRAINER_PARTY_HELD_ITEM:
@@ -2026,8 +2416,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-
+                CreateMon(&party[i], chosenMons[i], trainerLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 break;
             }
@@ -2040,15 +2429,83 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-
+                CreateMon(&party[i], chosenMons[i], trainerLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
-                for (j = 0; j < MAX_MON_MOVES; j++)
-                {
-                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
-                    SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
+                // needTMs = (Random() % 2);
+                // attemptTM = 255;
+                // while (needTMs > 0 && attemptTM > 0){
+                // //Teach coverage TMs
+                //     //Check a move is STAB
+                //     //if (gBattleMoves[GetMonData(&party[i],MON_DATA_MOVE1 + j)].type == gBaseStats[chosenMons[i]].type1) || (gBattleMoves[GetMonData(&party[i],MON_DATA_MOVE1 + j)].type == gBaseStats[chosenMons[i]].type2))
+                //     j = (Random() % (ITEM_HM08_DIVE-ITEM_TM01_FOCUS_PUNCH)) + ITEM_TM01_FOCUS_PUNCH;
+                //     if (CanSpeciesLearnTMHM(chosenMons[i], j-ITEM_TM01_FOCUS_PUNCH)) {
+                //             if ((gBattleMoves[ItemIdToBattleMoveId(j)].power > (trainerLevel)) && (gBattleMoves[ItemIdToBattleMoveId(j)].power < (2*trainerLevel)+30)) {
+                //                 testMove = ItemIdToBattleMoveId(j);
+                //                 movePointer = (u16*) &testMove;
+                //                 SetMonData(&party[i], MON_DATA_MOVE1+needTMs, movePointer);
+                //                 SetMonData(&party[i], MON_DATA_PP1+needTMs, &gBattleMoves[testMove]);
+                //                 needTMs -= 1;
+                //             }
+                //     }
+                //     attemptTM -= 1;
+                // }      
+
+                //Pulling Battle Frontier sets!
+                //Delcatty_1 - 162 - 15
+                //Delcatty_2 - 267 - 20
+                //Dugtrio_1 - 372 - 25
+                //Dugtrio_2 - 468 - 30
+                //Dugtrio_3 - 564 - 35
+                //Dugtrio_4 - 660 - 40
+                //Articuno_1 - 756 - 45
+                //Dragonite_1 - 850 - 45
+                //Uncapped - 882 - 45
+                frontierSet = 0;
+                frontierSkips = Random() % 13; //Pick a set, but try to, like, randomise the sets a bit.
+                if (frontierSkips < 3) { //Theres a chance that the set is just standard, and not frontier-pilled.
+                    while (frontierSkips > 0) {
+                        for (j = 0; j < 882; j++) { //Number of frontier mons is 882
+                            if (chosenMons[i] == gBattleFrontierMons[j].species) {
+                                    frontierSet = j;
+                            }
+                        }
+                        frontierSkips -= 1;
+                    }
+                        
+                
+                    if (frontierSet != 0) { //Put the set in
+                        for (j = 0; j < MAX_MON_MOVES; j++) {
+                            testMove = gBattleFrontierMons[frontierSet].moves[j];
+                            movePointer = (u16*) &testMove;
+                            SetMonData(&party[i], MON_DATA_MOVE1 + j, movePointer);
+                            SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[testMove]);
+                        }
+                    }
                 }
+
+                //Teach Gym TM            
+                if ((gymTM != 0) && (CanSpeciesLearnTMHM(chosenMons[i], gymTM-ITEM_TM01_FOCUS_PUNCH))) { 
+                    if (GetMonData(&party[i],MON_DATA_MOVE1 + 3) == MOVE_NONE) { //Try to fill empty move first
+                        testMove = ItemIdToBattleMoveId(gymTM);
+                        movePointer = (u16*) &testMove;
+                        SetMonData(&party[i], MON_DATA_MOVE1 + 3, movePointer);
+                        SetMonData(&party[i], MON_DATA_PP1 + 3, &gBattleMoves[testMove]);
+                    }
+                    else {
+                        for (j = 0; j < MAX_MON_MOVES; j++) //Otherwise replace a move of the same type
+                        {
+                            if (gBattleMoves[GetMonData(&party[i],MON_DATA_MOVE1 + j)].type == gBattleMoves[ItemIdToBattleMoveId(gymTM)].type) {
+                                testMove = ItemIdToBattleMoveId(gymTM);
+                                movePointer = (u16*) &testMove;
+                                SetMonData(&party[i], MON_DATA_MOVE1 + j, movePointer);
+                                SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[testMove].pp);
+                            }
+                        }
+                    }
+                    
+                }
+                
                 break;
             }
             }

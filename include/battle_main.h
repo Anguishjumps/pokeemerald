@@ -7,6 +7,16 @@ struct TrainerMoney
     u8 value;
 };
 
+//anguish was here
+struct TrainerTypeUsage
+{
+    u8 classId;
+    u8 type0;
+    u8 type1;
+    u8 type2;
+    u8 type3;
+};
+
 // For displaying a multi battle partner's Pokémon in the party menu
 struct MultiPartnerMenuPokemon
 {

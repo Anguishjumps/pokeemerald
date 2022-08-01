@@ -400,7 +400,7 @@ LavaridgeTown_Text_TownSign:
 
 LavaridgeTown_Text_GymSign:
 	.string "LAVARIDGE TOWN POKéMON GYM\n"
-	.string "LEADER: FLANNERY\l"
+	.string "LEADER: FLANNERY. LEVEL CAP: 29\l"
 	.string "“One with a fiery passion that burns!”$"
 
 LavaridgeTown_Text_HerbShopSign:

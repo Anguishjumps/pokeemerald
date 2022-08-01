@@ -399,7 +399,7 @@ MossdeepCity_Text_ItsAWhiteRock:
 
 MossdeepCity_Text_GymSign:
 	.string "MOSSDEEP CITY POKéMON GYM\n"
-	.string "LEADERS: LIZA & TATE\p"
+	.string "LEADERS: LIZA & TATE. LEVEL CAP: 42\p"
 	.string "“The mystic combination!”$"
 
 MossdeepCity_Text_CitySign:

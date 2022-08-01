@@ -1,3 +1,5 @@
+//open msys go to pokeemerald and then do make -j3
+
 static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
     {
     .iv = 0,

@@ -362,12 +362,28 @@ LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "the GYM LEADER of PETALBURG.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
-	.string "LAVARIDGE TOWN POKéMON GYM$"
+	.string "GYM LEVEL CAPS:\n"
+	.string "ROXANNE: 15\p"
+	.string "BRAWLY: 19\n"
+	.string "WATTSON: 24\p"
+	.string "FLANNERY: 29\n"
+	.string "NORMAN: 31\p"
+	.string "WINONA: 33\n"
+	.string "TATE AND LIZA: 42\p"
+	.string "JUAN: 46\n"
+	.string "ELITE FOUR: 55$"
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
-	.string "LAVARIDGE TOWN POKéMON GYM\p"
-	.string "FLANNERY'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "GYM LEVEL CAPS:\n"
+	.string "ROXANNE: 15\p"
+	.string "BRAWLY: 19\n"
+	.string "WATTSON: 24\p"
+	.string "FLANNERY: 29\n"
+	.string "NORMAN: 31\p"
+	.string "WINONA: 33\n"
+	.string "TATE AND LIZA: 42\p"
+	.string "JUAN: 46\n"
+	.string "ELITE FOUR: 55$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
 	.string "FLANNERY: Losing a battle isn't going\n"

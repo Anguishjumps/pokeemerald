@@ -18,6 +18,7 @@ RustboroCity_Mart_EventScript_PokemartBasic::
 
 	.align 2
 RustboroCity_Mart_Pokemart_Basic:
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION
 	.2byte ITEM_SUPER_POTION
